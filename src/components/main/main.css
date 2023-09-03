@@ -1,0 +1,38 @@
+.main video{
+	height: 88vh;
+	width: 100%;
+	object-fit: cover;
+}
+.main .content{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 35%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+.main .content h1{
+	margin-bottom: 30px;
+}
+.main .content .content-main{
+	font-size: 50px;
+}
+.main .content button{
+	margin-top: 30px;
+	background: transparent;
+	color: #07b907;
+	padding: 10px 20px;
+	letter-spacing: 2px;
+	border: 1px solid #07b907;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 700px;
+	cursor: pointer;
+}
+.main .content button:hover{
+	color: white;
+	background: #07b907;
+	border: none;
+}
