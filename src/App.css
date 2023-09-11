@@ -6,6 +6,88 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: rgba(0, 0, 0, .9);
     color: white;
+    line-height: 1.5;
+}
+.container{
+    padding: 40px 100px;
+}
+.back-title{
+    font-size: 110px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    z-index: -1;
+    color: rgba(256, 256, 256, .1);
+    margin-bottom: 80px;
+}
+.title-head{
+    font-size: 38px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    position: absolute;
+    top: 70px;
+    left: 40%;
+} 
+.title-head::after{
+    content: '';
+    width: 70px;
+    border: 2px solid #07b907;
+    position: absolute;
+    top: 55px;
+    left: 40%;
+}
+@media only screen and (max-width:900px){
+    .container{
+        padding: 40px;
+    }
+    .back-title{
+        font-size: 90px;
+    }
+    .title-head{
+        top: 48px;
+        left: 35%;
+    } 
+}
+@media only screen and (max-width:700px){
+    .back-title{
+        font-size: 70px;
+    }
+    .title-head{
+        font-size: 35px;
+        top: 35px;
+        left: 30%;
+    } 
+}
+
+@media only screen and (max-width:600px){
+    .back-title{
+        font-size: 55px;
+    }
+    .title-head{
+        font-size: 30px;
+        top: 35px;
+        left: 30%;
+    } 
+    .title-head::after{
+        top: 40px;
+        left: 40%;
+    }
+}
+@media only screen and (max-width:450px){
+    .back-title{
+        font-size: 50px;
+    }
+    .title-head{
+        font-size: 25px;
+        top: 30px;
+        left: 30%;
+    } 
+    .title-head::after{
+        top: 35px;
+        left: 40%;
+    }
 }

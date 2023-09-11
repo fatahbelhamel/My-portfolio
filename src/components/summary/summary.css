@@ -1,0 +1,42 @@
+.summary{
+	position: relative;
+    z-index: 10;
+}  
+.summary-content{
+	display: flex;
+	flex-direction: row;
+}
+.summary-content .cards{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.summary-content .cards .card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	border: 2px solid #07b907;
+	border-radius: 20px;
+	transition: 1s;
+	margin: 20px;
+}
+.summary-content .cards .card .card-title-date{
+	font-size: 15px;
+	font-weight: bold;
+	background: #07b907;
+	width: 95px;
+	padding: 2px 5px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+.summary-content .cards .card .card-title{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.summary-content .cards .card .card-sub-title{
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #07b907;
+}

@@ -1,9 +1,11 @@
 import './main.css';
-import videoBac from "./video.mp4";
+import videoBac from "../../assets/video.mp4";
 import { Typewriter, Cursor } from "react-simple-typewriter";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 
 const Main = ()=>{
-	const text = ['Fatah', 'a Web Designer', 'a Web Devlopper', 'a Fullstack Devlopper'];
+	const text = ['Fatah','a Front-end Web Devlopper'];
 	return (
        <div className="main">
           <video src={videoBac} autoPlay loop muted/>
@@ -24,6 +26,9 @@ const Main = ()=>{
           	<span><Cursor /></span></h1>
           	<p>based in Boumerdes, Algeria</p>
           	<button>Hire Me</button>
+          	<div className="arrow-down">
+              <FontAwesomeIcon icon={faAnglesDown} className="icon"/>
+          	</div>
           </div>
        </div>
 		)

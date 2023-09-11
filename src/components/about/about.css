@@ -1,0 +1,64 @@
+.about{
+    position: relative;
+    z-index: 10;
+}
+.about .about-main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about .about-main .about-content{
+	flex-basis: 60%;
+}
+.about .about-main .about-content .about-content-head{
+	margin-bottom: 20px;
+}
+.about .about-main .about-content .about-content-head span{
+	color: #07b907;
+}
+.about .about-main .about-content .about-content-text{
+	color: rgba(256, 256, 256, .6);
+	/*text-indent: 20px;*/
+}
+.about .about-main .about-info{
+	flex-basis: 30%;
+	margin-top: 20px;
+}
+.about .about-main .about-info p{
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(256, 256, 256, .2);
+}
+.about .about-main .about-info p .email{
+	color: #07b907;
+}
+.about .about-main .about-info p:nth-child(4){
+	border-bottom: none;
+}
+.about .about-main .about-info p strong{
+	font-size: 20px;
+	font-weight: bold;
+	padding-right: 8px;
+
+}
+.about .about-main .about-info button{
+	margin-top: 20px;
+	background: #07b907;
+	border: none;
+	border-radius: 20px;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 15px 25px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+@media only screen and (max-width:900px){
+    .about .about-main .about-content{
+	   flex-basis: 100%;
+    }
+    .about .about-main .about-info{
+	   flex-basis: 100%;
+    }
+}
