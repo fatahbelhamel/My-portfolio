@@ -1,0 +1,102 @@
+.portfolio{
+	position: relative;
+	background: rgba(0, 0, 0, .5);
+}
+.portfolio .projects{
+	display: flex;
+	flex-direction: column;
+}
+.portfolio .projects .project{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-content: center;
+	position: relative;
+	margin-bottom: 40px;
+}
+.portfolio .projects .project .project-img{
+	position: relative;
+}
+.portfolio .projects .project .project-img .overly{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 450px;
+	height: 300px;
+	background: transparent;
+	transition: 1s;
+}
+.portfolio .projects .project .project-img .btns{
+    position: absolute;
+    z-index: 10;
+    top: 150px;
+    left: 30%;
+    display: none;
+}
+.portfolio .projects .project .project-img img{
+	width: 450px;
+	height: 300px;
+	transition: 1s;
+	z-index: 1;
+}
+.portfolio .projects .project .project-img:nth-child(even) img{
+	border-right: 10px solid #07b907;
+	border-bottom: 10px solid #07b907;
+}
+.portfolio .projects .project .project-img:nth-child(odd) img{
+	border-left: 10px solid #07b907;
+	border-top: 10px solid #07b907;
+}
+.portfolio .projects .project .project-img:hover img{
+   opacity: .2;
+   transform: scale(1.3);
+}
+.portfolio .projects .project .project-img:hover .overly{
+	background: rgba(0, 0, 0, .6);
+	transform: scale(1.3);
+}
+.portfolio .projects .project .project-img:hover .btns{
+	display: flex;
+}
+.portfolio .projects .project .project-img .btns button{
+	font-size: 20px;
+	margin-right: 10px;
+	background: black;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	padding: 5px 20px;
+	cursor: pointer;
+	transition: 2s;
+}
+.portfolio .projects .project .project-img .btns button .icon{
+	color: #07b907;
+}
+.portfolio .projects .project .project-info{
+	width: 500px;
+	height: 300px;
+	z-index: 10;
+	background: black;
+	padding: 20px;
+	
+}
+.portfolio .projects .project .project-info:nth-child(even){
+	border-right: 5px solid #07b907;
+	border-bottom: 5px solid #07b907;
+}
+.portfolio .projects .project .project-info:nth-child(odd){
+	border-left: 5px solid #07b907;
+	border-top: 5px solid #07b907;
+}
+.portfolio .projects .project .project-info .project-title{
+	font-size: 25px;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+	color: #07b907;
+}
+.portfolio .projects .project .project-info .project-description{
+	font-size: 15px;
+	color: rgba(256, 256, 256, .6);
+}
+

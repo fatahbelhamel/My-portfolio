@@ -1,0 +1,44 @@
+           <div className="project" key={data.project_id}>
+                           <div className="project-img">
+                              <img src={data.project_image} alt=""/>
+                              <div className="overly"></div>
+                              <div className="btns">
+                                 <button><FontAwesomeIcon icon={faEye} className="icon"/></button>
+                                 <button><FontAwesomeIcon icon={faGithub} className="icon"/></button>
+                              </div>
+                           </div>
+                           <div className="project-info">*/
+                              <h2 className="project-title">{data.project_name}</h2>
+                              //*<p className="project-description">{data.project_description}</p>
+                           </div>
+                        </div>
+            <div className="project">
+               <div className="project-info">
+                  <h2 className="project-title">landing page</h2>
+                  <p className="project-description">I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                   Delivering work within time and budget which meets client’s requirements is our moto.</p>
+               </div>
+               <div className="project-img">
+                  <img src="" alt=""/>
+                  <div className="overly"></div>
+                  <div className="btns">
+                     <button><FontAwesomeIcon icon={faEye} className="icon"/></button>
+                     <button><FontAwesomeIcon icon={faGithub} className="icon"/></button>
+                  </div>
+               </div>
+            </div>
+            <div className="project">
+               <div className="project-img">
+                  <img src="" alt=""/>
+                  <div className="overly"></div>
+                  <div className="btns">
+                     <button><FontAwesomeIcon icon={faEye} className="icon"/></button>
+                     <button><FontAwesomeIcon icon={faGithub} className="icon"/></button>
+                  </div>
+               </div>
+               <div className="project-info">
+                  <h2 className="project-title">landing page</h2>
+                  <p className="project-description">I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                   Delivering work within time and budget which meets client’s requirements is our moto.</p>
+               </div>
+            </div>

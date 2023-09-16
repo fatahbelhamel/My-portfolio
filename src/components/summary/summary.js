@@ -1,10 +1,11 @@
 import "./summary.css";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 
 const Summary = () => {
 	return (
-       <div className="summary container">
+       <div className="summary container" id="summary">
           <h1 className="back-title">Summary</h1>
           <h1 className="title-head">Resume</h1>
           <div className="summary-content">
@@ -30,11 +31,33 @@ const Summary = () => {
                 </div>
              </div>
              <div className="skills">
-                <h2 className="skills-content-head">My Skills</h2>
+                <h2 className="skills-head">My Skills</h2>
                 <div className="skills-content">
-                  
+                  <div className="skills-content-section">
+                     <h3>web design <span className="porcentage">65%</span></h3>
+                     <p className="webdesign"></p>
+                  </div>
+                  <div className="skills-content-section">
+                     <h3>html/css <span className="porcentage">85%</span></h3>
+                     <p className="htmlcss"></p>
+                  </div>
+                  <div className="skills-content-section">
+                     <h3>bootstrap <span className="porcentage">70%</span></h3>
+                     <p className="bootstrap"></p>
+                  </div>
+                  <div className="skills-content-section">
+                     <h3>javascript <span className="porcentage">65%</span></h3>
+                     <p className="javascript"></p>
+                  </div>
+                  <div className="skills-content-section">
+                     <h3>react js <span className="porcentage">65%</span></h3>
+                     <p className="reactjs"></p>
+                  </div>
                 </div>
              </div>
+          </div>
+          <div className="btn">
+            <button>Download CV <FontAwesomeIcon icon={faDownload} className="icon"/></button>
           </div>
        </div>
 		)

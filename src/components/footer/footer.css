@@ -1,0 +1,13 @@
+.footer{
+	padding: 40px 0;
+	background: rgba(0, 0, 0, .5);
+}
+.footer h2{
+	font-size: 20px;
+	text-transform: capitalize;
+	text-align: center;
+}
+.footer h2 strong{
+	margin-left: 5px;
+	color: #07b907;
+}

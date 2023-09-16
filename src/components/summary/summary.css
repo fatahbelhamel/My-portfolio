@@ -5,12 +5,16 @@
 .summary-content{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .summary-content .cards{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	flex-basis: 60%;
+	flex-grow: 1;
 }
 .summary-content .cards .card{
 	display: flex;
@@ -39,4 +43,76 @@
 	font-size: 16px;
 	margin-bottom: 10px;
 	color: #07b907;
+}
+.summary-content .skills{
+	flex-basis: 30%;
+	flex-grow: 0;
+}
+.skills-content{
+	margin-top: 20px;
+}
+.skills-content .skills-content-section{
+	margin-bottom: 30px;
+}
+.skills-content .skills-content-section h3{
+	font-size: 17px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.skills-content .skills-content-section h3 .porcentage{
+	float: right;
+}
+.skills-content .skills-content-section p{
+	width: 400px;
+	height: 5px;
+	border-radius: 20px;
+	border: none;
+	background: black;
+	position: relative;
+	overflow:hidden;
+}
+.skills-content .skills-content-section p::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 10px;
+	background: #07b907;
+}
+.skills-content .skills-content-section p.webdesign::after{
+    width: 65%;
+}
+.skills-content .skills-content-section p.htmlcss::after{
+    width: 85%;
+}
+.skills-content .skills-content-section p.bootstrap::after{
+    width: 70%;
+}
+.skills-content .skills-content-section p.javascript::after{
+    width: 65%;
+}
+.skills-content .skills-content-section p.reactjs::after{
+    width: 65%;
+}
+.summary .btn{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.summary .btn button{
+	margin-top: 30px;
+	background: black;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 15px 35px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 1s;
+}
+.summary .btn button:hover{
+	border: 2px solid #07b907;
 }

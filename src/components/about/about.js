@@ -1,9 +1,18 @@
+import { useRef, forwardRef } from "react";
 import "./about.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
+
 
 const About = () => {
+
+  const about = useRef(); 
+
+   
 	return (
-		<div className="about container">
-          <h1 className="back-title">About Me</h1>
+		<div className="about container" id="about">
+          <h1 className="back-title" ref={about}>About Me</h1>
           <h1 className="title-head">Know Me More</h1>
           <div className="about-main">
              <div className="about-content">
@@ -16,7 +25,7 @@ const About = () => {
                 <p><strong>Email:</strong> <span className="email">fatahbelhamel32@gmail.com</span></p>
                 <p><strong>Age:</strong> 24</p>
                 <p><strong>From:</strong> Boumerdes, Algeria</p>
-                <button className="btn">Download CV</button>
+                <button className="btn">Download CV <FontAwesomeIcon icon={faDownload} className="icon"/></button>
              </div>
           </div>
 		</div>
