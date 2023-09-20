@@ -1,4 +1,3 @@
-import { useRef, forwardRef } from "react";
 import "./about.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -6,13 +5,10 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 
 const About = () => {
-
-  const about = useRef(); 
-
    
 	return (
 		<div className="about container" id="about">
-          <h1 className="back-title" ref={about}>About Me</h1>
+          <h1 className="back-title">About Me</h1>
           <h1 className="title-head">Know Me More</h1>
           <div className="about-main">
              <div className="about-content">

@@ -1,5 +1,6 @@
 import './main.css';
-import videoBac from "../../assets/video.mp4";
+import { Link } from "react-scroll";
+import videoBac from "../../assets/video1.mp4";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
@@ -7,7 +8,7 @@ import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 const Main = ()=>{
 	const text = ['Fatah','a Front-end Web Devlopper'];
 	return (
-       <div className="main">
+       <div className="main" id="main">
           <video src={videoBac} autoPlay loop muted/>
           <div className="content">
           	<h1 className="content-head">welcom</h1>
@@ -16,7 +17,7 @@ const Main = ()=>{
 	          <Typewriter
 	            words={text}
 	            loop
-	            cursor
+	            Cursor
 	            cursorStyle='_'
 	            typeSpeed={70}
 	            deleteSpeed={50}
@@ -25,9 +26,9 @@ const Main = ()=>{
           	</span>
           	<span><Cursor /></span></h1>
           	<p>based in Boumerdes, Algeria</p>
-          	<button>Hire Me</button>
+          	<Link to="contact" spy={true} smooth={true} affset={50} duration={1000} className="contact-btn">Contact Me</Link>
           	<div className="arrow-down">
-              <FontAwesomeIcon icon={faAnglesDown} className="icon"/>
+              <Link to="about" spy={true} smooth={true} affset={50} duration={1000} ><FontAwesomeIcon icon={faAnglesDown} className="icon"/></Link>
           	</div>
           </div>
        </div>
